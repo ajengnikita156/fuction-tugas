@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MENGHITUNG LUAS DAN KELILING PERSEGI</h1>
+    <p>Sisi 1 :<input type="text" id="sisi1"></p>
+    <p>Sisi 2 :<input type="text" id="sisi2"></p>
+    <button onclick="persegi()">HITUNG</button>
+    <p>Luas :<input type="text" disabled="" id="demo1"></p>
+    <p>Keliling : <input type="text"  disabled="" id="kel"></p>
+
+    <script>
+        function persegi(){
+       var sisi1 = document.getElementById("sisi1").value;
+       var sisi2 = document.getElementById("sisi2").value;
+       var jumlah = sisi1 * sisi2 ;
+       var jumlah2 = sisi1 * 4 ;
+      document.getElementById("demo1").value = jumlah;
+      document.getElementById("kel").value = jumlah2;
+        }
+     persegi(sisi1,sisi2)
+
+    </script>
+</body>
+</html>
